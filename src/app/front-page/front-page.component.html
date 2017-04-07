@@ -1,3 +1,14 @@
-<p>
-  front-page works!
-</p>
+<div class="hero">
+  //insert pic or something here. HERO
+</div>
+
+<div class="list-div">
+  <div class="each" *ngFor="let cont of contractors" (click)="toDetailPage(clickedContractor)">
+    <div class="icon">
+      <h4>{{contractor.name}}</h4>
+      <h5>{{contractor.specialization}}</h5>
+    </div>
+
+  </div>
+
+</div>
