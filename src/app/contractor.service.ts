@@ -18,4 +18,8 @@ export class ContractorService {
     return this.angularFire.database.object('contractors/' + contId);
   }
 
+  addContractor(contractorNew: Contractor){
+    this.contractors.push(contractorNew);
+  }
+
 }
