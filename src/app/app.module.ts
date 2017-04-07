@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { DetailComponent } from './detail/detail.component';
 import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
+import { EditContractorComponent } from './edit-contractor/edit-contractor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FrontPageComponent,
     DetailComponent,
-    AboutComponent
+    AboutComponent,
+    AdminComponent,
+    EditContractorComponent
   ],
   imports: [
     BrowserModule,
