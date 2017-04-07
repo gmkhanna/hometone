@@ -1,3 +1,41 @@
-<p>
-  edit-contractor works!
-</p>
+<div class="edit">
+
+  <h3>Edit Album</h3>
+
+  <div class="form-group">
+    <div>
+      <input [(ngModel)]=selectedContractor.name placeholder="Name">
+    </div>
+
+    <div>
+      <input [(ngModel)]=selectedContractor.specialization placeholder="Specialization">
+    </div>
+
+    <div>
+      <input [(ngModel)]=selectedContractor.license placeholder="License">
+    </div>
+
+    <div>
+      <input [(ngModel)]=selectedContractor.licexpire placeholder="License Exp">
+    </div>
+
+    <div>
+      <input [(ngModel)]=selectedContractor.contact placeholder="Email">
+    </div>
+
+    <div>
+      <textarea [(ngModel)]=selectedContractor.background placeholder="Background"></textarea>
+    </div>
+
+    <div>
+      <input [(ngModel)]=selectedContractor.portfolio placeholder="Portfolio">
+    </div>
+<br><br>
+  <button (click)="beginUpdatingContractor(selectedContractor)">Edit</button>
+  <br><br>
+  <button (click)="beginDeleting(selectedContractor)">Delete</button>
+
+    <br><br><br>
+
+  </div>
+</div>

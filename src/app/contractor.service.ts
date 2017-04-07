@@ -22,4 +22,17 @@ export class ContractorService {
     this.contractors.push(contractorNew);
   }
 
+  updateContract(localUpdatedContractor){
+    var FBEntry = this.specContractById(localUpdatedContractor.$key);
+    FBEntry.update({name: localUpdatedContractor.name,
+    specialization: localUpdatedContractor.specialization,
+  license: localUpdatedContractor.license, licexpire: localUpdatedContractor.licexpire, contact: localUpdatedContractor.contact, background: localUpdatedContractor.background, portfolio: localUpdatedContractor.portfolio});
+
+  }
+
+deleteContractor(localContractor) {
+  var FBEntry = this.specContractById(localContractor.$key)
+  FBEntry.remove();
+}
+
 }

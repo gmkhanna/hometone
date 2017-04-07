@@ -7,10 +7,15 @@
 </div>
 
 <div class="row list-row">
-  <div class="col-sm-3 each" (click)="toDetailPage(contract)" *ngFor="let contract of contractors | async">
+  <div class="col-sm-3 each" *ngFor="let contract of contractors | async">
     <div class="icon">
-      <h4>{{contract.name}}</h4>
-      <h5>{{contract.specialization}}</h5>
+      <h4 (click)="toDetailPage(contract)">Name: {{contract.name}}</h4>
+      <h5 (click)="toDetailPage(contract)">Specialization: {{contract.specialization}}</h5>
+      <div *ngIf="currentRoute === '/admin'">
+        {{contract.license}}
+        <hr>
+        <app-edit-contractor [selectedContractor]="contract"></app-edit-contractor>
+      </div>
     </div>
 
   </div>

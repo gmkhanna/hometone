@@ -1,42 +1,48 @@
+<div class="container">
 
-<div class="intro">
-  <h3>Manage Accounts</h3>
-</div>
+  <div class="intro">
+    <h3>Manage Accounts</h3>
+  </div>
 
-<div class="row add-area">
-    <div class="col-sm-8">
+  <div class="row add-area">
+    <div class="col-sm-7">
       <h3>Register New</h3>
       <div class="form-group">
-            <div>
-            <input #newName placeholder="Name">
+        <div>
+          <input #newName placeholder="Name">
         </div>
 
         <div>
-            <textarea #newSpecialization placeholder="Specialization"></textarea>
+          <textarea #newSpecialization placeholder="Specialization"></textarea>
         </div>
 
         <div>
-            <textarea #newLicense placeholder="license"></textarea>
+          <textarea #newLicense placeholder="license"></textarea>
         </div>
 
         <div>
-            <input #newExp placeholder="License Expiration">
+          <input #newExp placeholder="License Expiration">
         </div>
 
         <div>
-            <input #newContact placeholder="Contact Email">
+          <input #newContact placeholder="Contact Email">
         </div>
 
         <div>
-            <textarea rows="8" cols="80" #newBackground placeholder="Background Info"></textarea>
+          <textarea rows="8" cols="80" #newBackground placeholder="Background Info"></textarea>
         </div>
 
         <div>
           <input #newPortfolio placeholder="Portfolio">
         </div>
-<br>
+        <br>
         <button (click)="submitForm(newName.value, newSpecialization.value, newLicense.value, newExp.value, newContact.value, newBackground.value, newPortfolio.value); newName.value=''; newSpecialization.value=''; newLicense.value=''; newExp.value=''; newContact.value=''; newBackground.value=''; newPortfolio.value=''">Register</button>
         <br><br><br>
+      </div>
     </div>
-</div>
+  </div>
+
+  <div class="edit-area">
+    <app-front-page></app-front-page>
+  </div>
 </div>
