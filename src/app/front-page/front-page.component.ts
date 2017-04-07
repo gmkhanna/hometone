@@ -19,4 +19,9 @@ export class FrontPageComponent implements OnInit {
     this.contractors = this.contractorService.getContractors();
   }
 
+  toDetailPage(clickedContractor) {
+    console.log(clickedContractor.$key);
+    this.router.navigate(['contractors', clickedContractor.$key]);
+  }
+
 }

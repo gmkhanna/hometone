@@ -1,3 +1,8 @@
-<p>
-  detail works!
-</p>
+<router-outlet></router-outlet>
+
+<div class="cont-detail">
+
+  <h1>Contractor Info: {{(specContById | async)?.name}}</h1>
+  <h3>Specialization: {{(specContById | async)?.specialization}}</h3>
+
+</div>

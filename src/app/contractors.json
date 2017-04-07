@@ -1,6 +1,10 @@
-{
-  "contractors": [{
+{ "contractors": [{
     "name": "Joel Splunk",
-    "specialization": "Kitchen"
+    "specialization": "Kitchen",
+    "license": "123456789",
+    "licexpire": "07/22/2018",
+    "contact": "email: splunky@yomail.com",
+    "background": "I have been renovating kitchens for 15 years and can make yours look astounding. Look at the pics in my portfolio!",
+    "portfolio": "A lot of nice before and after pics."
     }]
 }

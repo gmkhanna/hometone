@@ -7,10 +7,10 @@
 </div>
 
 <div class="row list-row">
-  <div class="col-sm-3 each" *ngFor="let cont of contractors | async" (click)="toDetailPage(clickedContractor)">
+  <div class="col-sm-3 each" (click)="toDetailPage(contract)" *ngFor="let contract of contractors | async">
     <div class="icon">
-      <h4>{{cont.name}}</h4>
-      <h5>{{cont.specialization}}</h5>
+      <h4>{{contract.name}}</h4>
+      <h5>{{contract.specialization}}</h5>
     </div>
 
   </div>

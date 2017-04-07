@@ -11,7 +11,11 @@ export class ContractorService {
   }
 
   getContractors() {
-    return this.contractors;    
+    return this.contractors;
+  }
+
+  specContById(contId: string) {
+    return this.angularFire.database.object('contractors/' + contId);
   }
 
 }

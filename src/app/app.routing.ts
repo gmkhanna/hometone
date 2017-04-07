@@ -17,7 +17,7 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: "contractor/:id",
+    path: "contractors/:id",
     component: DetailComponent
   },
   {
