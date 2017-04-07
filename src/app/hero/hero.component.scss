@@ -1,0 +1,43 @@
+body {
+  background-color: #D2D1D6;
+}
+
+.hero1 {
+  width: 1200px;
+  height: 400px;
+  max-width: 1200px;
+  min-width: 270px;
+  max-height: 400px;
+  min-height: 200px
+}
+
+.container {
+  width: 1200px;
+  height: 400px;
+  max-width: 1200px;
+  min-width: 270px;
+  max-height: 400px;
+  min-height: 200px;
+  .info1 {
+    display: inline-block;
+    .info-clm {
+      background-color: #E5EAED;
+      box-shadow: 3px 2px 2px 2px lightgray;
+      height: 130px;
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 40px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.hero2 {
+  width: 1200px;
+  height: 400px;
+  max-width: 1200px;
+  min-width: 270px;
+  max-height: 400px;
+  min-height: 200px
+}

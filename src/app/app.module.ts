@@ -12,6 +12,7 @@ import { AdminComponent } from './admin/admin.component';
 import { EditContractorComponent } from './edit-contractor/edit-contractor.component';
 import { AngularFireModule } from 'angularfire2';
 import { masterFirebaseConfig  } from './api-keys';
+import { HeroComponent } from './hero/hero.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     DetailComponent,
     AboutComponent,
     AdminComponent,
-    EditContractorComponent
+    EditContractorComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
