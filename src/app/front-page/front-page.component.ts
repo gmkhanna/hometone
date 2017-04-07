@@ -13,6 +13,7 @@ import { ContractorService } from '../contractor.service';
 export class FrontPageComponent implements OnInit {
   contractors: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  public filterSpecialty: string = "all";
 
   constructor(public contractorService: ContractorService, public router: Router) { }
 

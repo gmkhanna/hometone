@@ -20,7 +20,7 @@ export class AdminComponent implements OnInit {
   submitForm(newName: string, newSpecialization: string, newLicense?: number, newLicExp?: string, newContact?: string, newBackground?: string, newPortfolio?: string): void {
     var contractorNew: Contractor = new Contractor(newName, newSpecialization, newLicense, newLicExp, newContact, newBackground, newPortfolio);
     this.contractorService.addContractor(contractorNew);
-    this.router.navigate(['']);
+    this.router.navigate(['main']);
   }
 
   toEditContractor(contractor) {

@@ -1,15 +1,26 @@
 
-<div class="row list-row">
-  <div class="col-sm-3 each" *ngFor="let contract of contractors | async">
+<div class="container">
+
+
+  <div class="each" *ngFor="let contract of contractors | async">
     <div class="icon">
       <h4 (click)="toDetailPage(contract)">Name: {{contract.name}}</h4>
       <h5 (click)="toDetailPage(contract)">Specialization: {{contract.specialization}}</h5>
+      <p (click)="toDetailPage(contract)">Background: {{contract.background}}</p>
+    </div>
       <div *ngIf="currentRoute === '/admin'">
-        {{contract.license}}
         <hr>
         <app-edit-contractor [selectedContractor]="contract"></app-edit-contractor>
       </div>
+
     </div>
-    
-  </div>
 </div>
+
+ <!-- | specSort:filterSpecialty
+
+
+   <select class="view-specialty" (input)="filterSpecialty = $event.target.value">
+   <option value=1>Kitchen</option>
+   <option value=2>Bathroom</option>
+   <option value=3>Patio</option>
+   </select> -->

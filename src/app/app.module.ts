@@ -13,6 +13,7 @@ import { EditContractorComponent } from './edit-contractor/edit-contractor.compo
 import { AngularFireModule } from 'angularfire2';
 import { masterFirebaseConfig  } from './api-keys';
 import { HeroComponent } from './hero/hero.component';
+import { SpecialtyPipe } from './specialty.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     AboutComponent,
     AdminComponent,
     EditContractorComponent,
-    HeroComponent
+    HeroComponent,
+    SpecialtyPipe
   ],
   imports: [
     BrowserModule,
