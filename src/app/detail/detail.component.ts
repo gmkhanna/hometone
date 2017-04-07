@@ -24,6 +24,6 @@ export class DetailComponent implements OnInit {
     this.route.params.forEach((urlParam) => {
         this.contId = urlParam['id'];
     });
-    this.contToDisplay = this.contractorService.specContById(this.contId);
+    this.contToDisplay = this.contractorService.specContractById(this.contId);
   }
 }

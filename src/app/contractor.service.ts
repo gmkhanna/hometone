@@ -14,7 +14,7 @@ export class ContractorService {
     return this.contractors;
   }
 
-  specContById(contId: string) {
+  specContractById(contId: string) {
     return this.angularFire.database.object('contractors/' + contId);
   }
 
