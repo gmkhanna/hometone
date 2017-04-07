@@ -1,0 +1,36 @@
+.hero1 {
+  outline: red 3px solid;
+  margin-top: 0px;
+  height: 300px;
+}
+
+.list-row {
+  outline: red 3px solid;
+
+  .col-sm-3 {
+    outline: orange 3px solid;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+    display: inline-block;
+
+    .icon {
+      outline: green 3px solid;
+
+
+      h4 {
+        outline: blue 3px solid;
+
+      }
+      h5 {
+        outline: purple 3px solid;
+
+      }
+    }
+  }
+}
+
+.hero2 {
+  height: 300px;
+}

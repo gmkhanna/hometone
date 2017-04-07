@@ -1,8 +1,17 @@
 import { Injectable } from '@angular/core';
+import { Contractor } from './contractor.model';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class ContractorService {
+  contractors: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private angularFire: AngularFire) {
+    this.contractors = angularFire.database.list('contractors');
+  }
+
+  getContractors() {
+    return this.contractors;    
+  }
 
 }
