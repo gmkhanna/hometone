@@ -1,0 +1,17 @@
+{
+  "name": "home-tone",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Grinil Khanna <gmkhanna@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
