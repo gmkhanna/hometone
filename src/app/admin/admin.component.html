@@ -1,37 +1,33 @@
-<div class="container">
 
-  <div class="intro">
-    <h3>Manage Accounts</h3>
-  </div>
+<div class="intro">
+  <h3>Manage Accounts</h3>
+</div>
 
-  <div class="row add-area">
-    <div class="col-sm-7">
+<!-- <div class="container"> -->
+
+<div class="row">
+  <div class="col-sm-3 add">
+
       <h3>Register New</h3>
       <div class="form-group">
         <div>
           <input #newName placeholder="Name">
         </div>
-
         <div>
-          <textarea #newSpecialization placeholder="Specialization"></textarea>
+          <input #newSpecialization placeholder="Specialization">
         </div>
-
         <div>
-          <textarea #newLicense placeholder="license"></textarea>
+          <input #newLicense placeholder="license">
         </div>
-
         <div>
           <input #newExp placeholder="License Expiration">
         </div>
-
         <div>
           <input #newContact placeholder="Contact Email">
         </div>
-
         <div>
-          <textarea rows="8" cols="80" #newBackground placeholder="Background Info"></textarea>
+          <textarea rows="4" cols="40" #newBackground placeholder="Background Info"></textarea>
         </div>
-
         <div>
           <input #newPortfolio placeholder="Portfolio">
         </div>
@@ -40,9 +36,11 @@
         <br><br><br>
       </div>
     </div>
-  </div>
 
-  <div class="edit-area">
-    <app-front-page></app-front-page>
+<div class="col-sm-1"></div>
+
+    <div class="col-sm-5 edit-area">
+      <app-front-page></app-front-page>
   </div>
-</div>
+  </div>
+<!-- </div> -->

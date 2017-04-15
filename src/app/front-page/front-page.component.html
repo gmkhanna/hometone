@@ -8,23 +8,26 @@
   <h2>Contractor Profiles</h2>
 
   <div class="row space"></div>
-  <div class="row space"></div>
 
+  <div class="row">
+  <div class="col-sm-7">
   <div class="each" *ngFor="let contract of contractors | async">
     <div class="icon">
       <h3 (click)="toDetailPage(contract)">{{contract.name}}</h3>
       <h5 (click)="toDetailPage(contract)">Specialization: {{contract.specialization}}</h5>
-      <p>License Number: {{contract.license}} || <em>Exp.{{contract.licexpire}}</em></p>
+      <p (click)="toDetailPage(contract)">License Number: {{contract.license}} || <em>Exp.{{contract.licexpire}}</em></p>
       <p (click)="toDetailPage(contract)">Contact: {{contract.contact}}</p>
     </div>
-  </div>
-    <div class="row space"></div>
-    <div class="row space"></div>
-
     <div *ngIf="currentRoute === '/admin'">
       <hr>
-      <app-edit-contractor [selectedContractor]="contract"></app-edit-contractor>
+      <button type="button" (click)="toEditCont()">Edit</button>
+      <div *ngIf="editContractor">
+        <app-edit-contractor [selectedContractor]="contract"></app-edit-contractor>
+      </div>
     </div>
+  </div>
+</div>
+</div>
 
 </div>
 

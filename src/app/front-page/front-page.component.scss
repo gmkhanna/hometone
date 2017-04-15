@@ -1,7 +1,6 @@
-.hero1 {
-  outline: red 3px solid;
-  margin-top: 0px;
-  height: 300px;
+
+.row {
+  margin-left: 10px;
 }
 
 .space {
@@ -9,14 +8,27 @@
 }
 
     .icon {
-      outline: green 3px solid;
+      box-radius: 3%;
+      box-shadow: 1px 1px lightgray;
       margin-top: 6%;
-      h3 {
-        outline: blue 3px solid;
-      }
-      h5 {
-        outline: purple 3px solid;
-      }
+      width: 50%;
+    }
+
+    .icon:hover {
+      box-radius: 3%;
+      box-shadow: 2px 2px 2px 2px lightgray;
+      margin-top: 6%;
+      width: 50%;
+    }
+    h3:hover {
+      box-shadow: 2px 2px lightblue;
+    }
+    h5:hover {
+      box-shadow: 2px 2px lightblue;
+    }
+
+    p:hover {
+      box-shadow: 2px 2px lightblue;
     }
 
 // .list-row {

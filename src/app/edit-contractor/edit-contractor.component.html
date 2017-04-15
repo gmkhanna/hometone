@@ -1,8 +1,6 @@
 <div class="edit">
 
-  <h5>Edit Album</h5>
-
-  <div class="form-group">
+  <div class="form-group well">
     <div>
       <input [(ngModel)]=selectedContractor.name placeholder="Name">
     </div>
@@ -25,10 +23,7 @@
       <input [(ngModel)]=selectedContractor.portfolio placeholder="Portfolio">
     </div>
 <br>
-  <button (click)="beginUpdatingContractor(selectedContractor)">Edit</button> ||
-  <button (click)="beginDeleting(selectedContractor)">Delete</button>
-
-    <br><br><br>
+  <button class="delete" (click)="beginDeleting(selectedContractor)">Delete</button>
 
   </div>
 </div>

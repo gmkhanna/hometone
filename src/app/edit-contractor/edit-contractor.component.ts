@@ -4,7 +4,7 @@ import { ContractorService } from '../contractor.service';
 @Component({
   selector: 'app-edit-contractor',
   templateUrl: './edit-contractor.component.html',
-  styleUrls: ['./edit-contractor.component.css'],
+  styleUrls: ['./edit-contractor.component.scss'],
   providers: [ContractorService]
 })
 

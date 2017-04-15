@@ -13,7 +13,10 @@ import { ContractorService } from '../contractor.service';
 export class FrontPageComponent implements OnInit {
   contractors: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  public editContractor = false;
+
   public filterSpecialty: string = "all";
+
 
   constructor(public contractorService: ContractorService, public router: Router) { }
 
@@ -27,4 +30,11 @@ export class FrontPageComponent implements OnInit {
     this.router.navigate(['contractors', clickedContractor.$key]);
   }
 
-}
+  toEditCont() {
+    if (this.editContractor === false){
+      this.editContractor = true;
+    } else {
+         this.editContractor = false;
+      }
+    }
+  }
