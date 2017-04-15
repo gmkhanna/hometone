@@ -10,6 +10,7 @@ import { ContractorService } from '../contractor.service';
 
 export class EditContractorComponent implements OnInit {
   @Input() selectedContractor;
+  // public editContractor = false;
 
   constructor(public contractorService: ContractorService) { }
 
@@ -18,6 +19,7 @@ export class EditContractorComponent implements OnInit {
 
   beginUpdatingContractor(contractorToUpdate) {
     this.contractorService.updateContract(contractorToUpdate);
+    alert("Updated!");
   }
 
   beginDeleting(contractorToDelete) {

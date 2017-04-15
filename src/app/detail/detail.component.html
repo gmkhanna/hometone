@@ -1,11 +1,20 @@
 <router-outlet></router-outlet>
 
-<div class="space-lg"></div>
+<div class="container">
 
+<div class="space-lg"></div>
 <div class="cont-detail">
 
-  <h1>Contractor Info: {{(contToDisplay | async)?.name}}</h1>
+  <h3>Contractor Info</h3>
   <div class="space-sm"></div>
+  <div class="info-card">
+  <h2>{{(contToDisplay | async)?.name}}</h2>
   <h3>Specialization: {{(contToDisplay | async)?.specialization}}</h3>
-
+  <h4>License #: {{(contToDisplay | async)?.license}} || {{(contToDisplay | async)?.licexpire}}</h4>
+  <h5>{{(contToDisplay | async)?.background}}</h5>
+  <!-- <div class="portfolio" *ngFor="let image of images"> -->
+    <img src="{{(contToDisplay | async)?.porfolio}}" alt="Portfolio pictures">
+  <!-- </div> -->
+</div>
+</div>
 </div>
