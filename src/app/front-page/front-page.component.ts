@@ -14,9 +14,7 @@ export class FrontPageComponent implements OnInit {
   contractors: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
   public editContractor = false;
-
-  public filterSpecialty: string = "all";
-
+  public filterType: string = "all";
 
   constructor(public contractorService: ContractorService, public router: Router) { }
 
@@ -36,5 +34,9 @@ export class FrontPageComponent implements OnInit {
     } else {
          this.editContractor = false;
       }
+    }
+
+    onSelect(desiredSelection) {
+      this.filterType = desiredSelection;
     }
   }

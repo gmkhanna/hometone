@@ -9,9 +9,17 @@
 
   <div class="row space"></div>
 
+<select class="type" (change)="onSelect($event.target.value)">
+  <option value="0">All</option>
+  <option value="1">Kitchen</option>
+  <option value="2">Patio</option>
+  <option value="3">Outdoor</option>
+  <option value="4">Bathroom</option>
+</select>
+
   <div class="row">
   <div class="col-sm-7">
-  <div class="each" *ngFor="let contract of contractors | async">
+  <div class="each" *ngFor="let contract of contractors | async | specialty:filterType">
     <div class="icon">
       <h3 (click)="toDetailPage(contract)">{{contract.name}}</h3>
       <h5 (click)="toDetailPage(contract)">Specialization: {{contract.specialization}}</h5>
@@ -33,12 +41,3 @@
 
 <div class="row space"></div>
 <div class="row space"></div>
-
-<!-- | specSort:filterSpecialty
-
-
-<select class="view-specialty" (input)="filterSpecialty = $event.target.value">
-<option value=1>Kitchen</option>
-<option value=2>Bathroom</option>
-<option value=3>Patio</option>
-</select> -->
