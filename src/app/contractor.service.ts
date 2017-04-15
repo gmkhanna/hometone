@@ -5,7 +5,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 @Injectable()
 export class ContractorService {
   contractors: FirebaseListObservable<any[]>;
-  specReqOutput = [];
+  // specReqOutput = [];
 
   constructor(private angularFire: AngularFire) {
     this.contractors = angularFire.database.list('contractors');
@@ -36,22 +36,22 @@ deleteContractor(localContractor) {
   FBEntry.remove();
 }
 
-specReqKitchen(req: string) {
-        this.contractors.subscribe(contractors => {
-            console.log(contractors);
-            console.log(this.contractors);
-            contractors.forEach(contractor => {
-                // console.log(project);
-                // console.log(project.category);
-                if (contractor.specialty === req)
-                {
-                    this.specReqOutput.push(contractor);
-                }
-                // else {
-                //     this.specProjectByCategoryOutput.push(project);
-                // }
-            });
-            return this.specReqOutput;
-        });
-      }
+// specReqKitchen(req: string) {
+//         this.contractors.subscribe(contractors => {
+//             console.log(contractors);
+//             console.log(this.contractors);
+//             contractors.forEach(contractor => {
+//                 // console.log(project);
+//                 // console.log(project.category);
+//                 if (contractor.specialty === req)
+//                 {
+//                     this.specReqOutput.push(contractor);
+//                 }
+//                 // else {
+//                 //     this.specProjectByCategoryOutput.push(project);
+//                 // }
+//             });
+//             return this.specReqOutput;
+//         });
+//       }
 }

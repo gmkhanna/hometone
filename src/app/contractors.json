@@ -1,10 +1,27 @@
 { "contractors": [{
     "name": "Joel Splunk",
-    "specialization": "Kitchen",
+    "specialization" : "Kitchen",
     "license": "123456789",
     "licexpire": "07/22/2018",
-    "contact": "email: splunky@yomail.com",
+    "contact": "splunky@yomail.com",
     "background": "I have been renovating kitchens for 15 years and can make yours look astounding. Look at the pics in my portfolio!",
     "portfolio": "A lot of nice before and after pics."
-    }]
+  },
+  {
+    "name" : "Steve Swan",
+    "specialization" : "Patio",
+    "license" : "786387639",
+    "licexpire" : "03/12/2018",
+    "contact" : "swany@hometone.com",
+    "background" : "I craft patios and outdoor for all waether conditons and pay attention to quality and detail.",
+    "portfolio" : "Some pics of some great work"
+}],
+  "specialization" : {
+    "Kitchen" : {
+        "Joel Splunk" : true
+      },
+    "Patio" : {
+        "Steve Swan" : true
+    }
+  }
 }

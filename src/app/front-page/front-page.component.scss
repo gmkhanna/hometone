@@ -4,34 +4,29 @@
   height: 300px;
 }
 
-.list-row {
-  outline: red 3px solid;
-  margin-top: 8%;
-  height: 300px;
-
-  .col-sm-3 {
-    outline: orange 3px solid;
-    padding: 10px;
-    margin: 30px;
-    height: 150px;
-    display: inline-block;
+.space {
+  height: 25px;
+}
 
     .icon {
       outline: green 3px solid;
-
-
-      h4 {
+      margin-top: 6%;
+      h3 {
         outline: blue 3px solid;
-
       }
       h5 {
         outline: purple 3px solid;
-
       }
     }
-  }
-}
 
-.hero2 {
-  height: 300px;
-}
+// .list-row {
+//   outline: red 3px solid;
+//   margin-top: 8%;
+//   height: 300px;
+//
+//   .col-sm-3 {
+//     outline: orange 3px solid;
+//     padding: 10px;
+//     margin: 30px;
+//     height: 150px;
+//     display: inline-block;

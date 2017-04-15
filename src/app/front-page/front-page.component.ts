@@ -19,6 +19,7 @@ export class FrontPageComponent implements OnInit {
 
   ngOnInit() {
     this.contractors = this.contractorService.getContractors();
+    console.log(this.contractors);
   }
 
   toDetailPage(clickedContractor) {

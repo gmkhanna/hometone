@@ -1,8 +1,11 @@
 <router-outlet></router-outlet>
 
+<div class="space-lg"></div>
+
 <div class="cont-detail">
 
   <h1>Contractor Info: {{(contToDisplay | async)?.name}}</h1>
+  <div class="space-sm"></div>
   <h3>Specialization: {{(contToDisplay | async)?.specialization}}</h3>
 
 </div>

@@ -1,26 +1,41 @@
 
+
 <div class="container">
 
+  <div class="row space"></div>
+  <div class="row space"></div>
+
+  <h2>Contractor Profiles</h2>
+
+  <div class="row space"></div>
+  <div class="row space"></div>
 
   <div class="each" *ngFor="let contract of contractors | async">
     <div class="icon">
-      <h4 (click)="toDetailPage(contract)">Name: {{contract.name}}</h4>
+      <h3 (click)="toDetailPage(contract)">{{contract.name}}</h3>
       <h5 (click)="toDetailPage(contract)">Specialization: {{contract.specialization}}</h5>
-      <p (click)="toDetailPage(contract)">Background: {{contract.background}}</p>
+      <p>License Number: {{contract.license}} || <em>Exp.{{contract.licexpire}}</em></p>
+      <p (click)="toDetailPage(contract)">Contact: {{contract.contact}}</p>
     </div>
-      <div *ngIf="currentRoute === '/admin'">
-        <hr>
-        <app-edit-contractor [selectedContractor]="contract"></app-edit-contractor>
-      </div>
+  </div>
+    <div class="row space"></div>
+    <div class="row space"></div>
 
+    <div *ngIf="currentRoute === '/admin'">
+      <hr>
+      <app-edit-contractor [selectedContractor]="contract"></app-edit-contractor>
     </div>
+
 </div>
 
- <!-- | specSort:filterSpecialty
+<div class="row space"></div>
+<div class="row space"></div>
+
+<!-- | specSort:filterSpecialty
 
 
-   <select class="view-specialty" (input)="filterSpecialty = $event.target.value">
-   <option value=1>Kitchen</option>
-   <option value=2>Bathroom</option>
-   <option value=3>Patio</option>
-   </select> -->
+<select class="view-specialty" (input)="filterSpecialty = $event.target.value">
+<option value=1>Kitchen</option>
+<option value=2>Bathroom</option>
+<option value=3>Patio</option>
+</select> -->
